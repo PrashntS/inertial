@@ -1,0 +1,13 @@
+PODS:
+  - Charts (2.1.4)
+  - MotionKit (0.8.1)
+
+DEPENDENCIES:
+  - Charts
+  - MotionKit
+
+SPEC CHECKSUMS:
+  Charts: 870589b6b4bf8468baacea8869c28983d71f602c
+  MotionKit: a88a7d7b5ed6652793a3744f6ca58227d8804236
+
+COCOAPODS: 0.38.2
