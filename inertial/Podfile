@@ -6,6 +6,7 @@ target 'inertial' do
    pod 'MotionKit'
    pod 'Realm'
    pod 'FileKit'
+   pod 'SwiftCharts'
 end
 
 use_frameworks!

@@ -12,29 +12,29 @@ import CoreMotion
 
 class ChartViewController: UIViewController, ChartViewDelegate {
     
-    @IBOutlet weak var chV: BarChartView!
-    var days:[String] = []
-    var stepsTaken:[Int] = []
-    let activityManager = CMMotionActivityManager()
-    let pedoMeter = CMPedometer()
+    @IBOutlet weak var lineChartView: LineChartView!
+    @IBOutlet weak var testLabel: UILabel!
+
+    let motionKit = MotionKit()
     
-    var cnt = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        chV.delegate = self;
         
-        chV.descriptionText = "";
-        chV.noDataTextDescription = "Data will be loaded soon."
+        lineChartView.delegate = self
         
-        chV.drawBarShadowEnabled = false
-        chV.drawValueAboveBarEnabled = true
+        let dataPoints = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+        let values = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
+        var dataEntries: [ChartDataEntry] = []
+        for i in 0..<dataPoints.count {
+            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+            dataEntries.append(dataEntry)
+        }
         
-        chV.maxVisibleValueCount = 60
-        chV.pinchZoomEnabled = false
-        chV.drawGridBackgroundEnabled = true
-        chV.drawBordersEnabled = false
+        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
+        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
+        lineChartView.data = lineChartData
         
-        getDataForLastWeek()
+        getSensorData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,51 +44,27 @@ class ChartViewController: UIViewController, ChartViewDelegate {
     @IBAction func dismiss(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    func getDataForLastWeek() {
-        if(CMPedometer.isStepCountingAvailable()){
-            var serialQueue : dispatch_queue_t  = dispatch_queue_create("com.example.MyQueue", nil)
-            
-            let formatter = NSDateFormatter()
-            formatter.dateFormat = "d MMM"
-            dispatch_sync(serialQueue, { () -> Void in
-                let today = NSDate()
-                for day in 0...6{
-                    let fromDate = NSDate(timeIntervalSinceNow: Double(-7+day) * 86400)
-                    let toDate = NSDate(timeIntervalSinceNow: Double(-7+day+1) * 86400)
-                    let dtStr = formatter.stringFromDate(toDate)
-                    self.pedoMeter.queryPedometerDataFromDate(fromDate, toDate: toDate) { (data : CMPedometerData?, error) -> Void in
-                        if(error == nil){
-                            print("\(dtStr) : \(data!.numberOfSteps)")
-                            self.days.append(dtStr)
-                            self.stepsTaken.append(Int(data!.numberOfSteps))
-                            print("Days :\(self.days)")
-                            print("Steps :\(self.stepsTaken)")
-                            if(self.days.count == 7){
-                                dispatch_sync(dispatch_get_main_queue(), { () -> Void in
-                                    let xVals = self.days
-                                    var yVals: [BarChartDataEntry] = []
-                                    for idx in 0...6 {
-                                        yVals.append(BarChartDataEntry(value: Double(self.stepsTaken[idx]), xIndex: idx))
-                                    }
-                                    print("Days :\(self.days)")
-                                    print("Steps :\(self.stepsTaken)")
-                                    
-                                    let set1 = BarChartDataSet(yVals: yVals, label: "Steps Taken")
-                                    set1.barSpace = 0.25
-                                    
-                                    let data = BarChartData(xVals: xVals, dataSet: set1)
-                                    data.setValueFont(UIFont(name: "Avenir", size: 12))
-                                    self.chV.data = data
-                                    self.view.reloadInputViews()
-                                })
-                                
-                            }
-                        }
-                    }
-                    
-                }
-                
+
+    func getSensorData() {
+        self.motionKit.getDeviceMotionObject(0.01) {
+            (deviceMotion) -> () in
+            let motionData: [String: Double] = [
+                "Accel_X": deviceMotion.gravity.x,
+                "Accel_Y": deviceMotion.gravity.y,
+                "Accel_Z": deviceMotion.gravity.z,
+                "RotRate_X": deviceMotion.rotationRate.x,
+                "RotRate_Y": deviceMotion.rotationRate.y,
+                "RotRate_Z": deviceMotion.rotationRate.z,
+                "MagX": deviceMotion.magneticField.field.x,
+                "MagY": deviceMotion.magneticField.field.y,
+                "MagZ": deviceMotion.magneticField.field.z,
+                "Yaw": deviceMotion.attitude.yaw,
+                "Pitch": deviceMotion.attitude.pitch,
+                "Roll": deviceMotion.attitude.roll
+            ]
+            dispatch_sync(dispatch_get_main_queue(), { () ->
+                Void in
+                self.testLabel.text = motionData["Accel_X"]?.description
             })
         }
     }

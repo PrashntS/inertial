@@ -56,10 +56,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-inertial/FileKit.framework'
   install_framework 'Pods-inertial/MotionKit.framework'
   install_framework 'Pods-inertial/Realm.framework'
+  install_framework 'Pods-inertial/SwiftCharts.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-inertial/Charts.framework'
   install_framework 'Pods-inertial/FileKit.framework'
   install_framework 'Pods-inertial/MotionKit.framework'
   install_framework 'Pods-inertial/Realm.framework'
+  install_framework 'Pods-inertial/SwiftCharts.framework'
 fi
