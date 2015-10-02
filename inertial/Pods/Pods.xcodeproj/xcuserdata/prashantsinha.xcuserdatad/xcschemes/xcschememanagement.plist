@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FileKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MotionKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,24 +24,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>B9524C3BE018F1A94AD24B100289C8BA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CC3A2613A20349370B6DB57C498C21F0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA705D0FE640C6EDF276D2531F2204B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
