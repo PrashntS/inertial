@@ -32,6 +32,13 @@ class LoggerController: UIViewController {
             // Gather Values from Global Tag and Sample Rate.
             let tag  = self.motionTag.text,
                 rate = Int(self.rateSlider.value)
+            
+            if tag?.characters.count < 5 {
+                self.triggerSwitch.on = false
+                SweetAlert().showAlert("Invalid Tag", subTitle: "Please enter a descriptive Motion Tag Value.", style: AlertStyle.Error)
+                return
+            }
+            
             // Disable These
             self.motionTag.enabled = false
             self.rateSlider.enabled = false

@@ -16,6 +16,7 @@
 		2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */; settings = {ASSET_TAGS = (); }; };
 		2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
+		2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */; settings = {ASSET_TAGS = (); }; };
 		EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionKit.swift; path = ../Pods/MotionKit/MotionKit/MotionKit.swift; sourceTree = "<group>"; };
 		2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
 		B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inertial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B7338D54841504C6C9C852 /* Pods-inertial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inertial.release.xcconfig"; path = "Pods/Target Support Files/Pods-inertial/Pods-inertial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */,
 				2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */,
 				2B0955771BBD75F7006FB5C1 /* Info.plist */,
+				2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */,
 			);
 			path = inertial;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */,
 				2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */,
 				2B09556A1BBD75F7006FB5C1 /* AppDelegate.swift in Sources */,
+				2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */,
 				2B09556C1BBD75F7006FB5C1 /* LoggerController.swift in Sources */,
 				2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */,
 			);
