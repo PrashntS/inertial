@@ -5,13 +5,15 @@ PODS:
   - Realm (0.95.2):
     - Realm/Headers (= 0.95.2)
   - Realm/Headers (0.95.2)
+  - RealmSwift (0.95.2):
+    - Realm (= 0.95.2)
   - SwiftCharts (0.3)
 
 DEPENDENCIES:
   - Charts
   - FileKit
   - MotionKit
-  - Realm
+  - RealmSwift
   - SwiftCharts
 
 SPEC CHECKSUMS:
@@ -19,6 +21,7 @@ SPEC CHECKSUMS:
   FileKit: 18bc18fa0a66b3718960dc5105a7f99a14b83caf
   MotionKit: a88a7d7b5ed6652793a3744f6ca58227d8804236
   Realm: 4c026902041bb39c4bd083ebc5e88f4f17973d72
+  RealmSwift: ac7822fe7ab8dca7fa979f4d576793b111d6dce1
   SwiftCharts: c66a449d58f9c811c467f865a47b1b6136b49499
 
 COCOAPODS: 0.38.2

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "609B22334A429E1089866273"
+               BlueprintIdentifier = "C385130D5ABC9F8ABEC0CA01"
                BuildableName = "Pods_inertial.framework"
                BlueprintName = "Pods-inertial"
                ReferencedContainer = "container:Pods.xcodeproj">

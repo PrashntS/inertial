@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D203C5BB784B12FA6782B7D5"
+               BlueprintIdentifier = "DA364A130D7C05E1CD52FA5F"
                BuildableName = "FileKit.framework"
                BlueprintName = "FileKit"
                ReferencedContainer = "container:Pods.xcodeproj">

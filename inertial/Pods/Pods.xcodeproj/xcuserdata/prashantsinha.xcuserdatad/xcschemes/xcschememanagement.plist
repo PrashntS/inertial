@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftCharts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>65781F18FDA22393ECD7B6AB8E6E5943</key>
+		<key>10845198053E6B4C1CB0DB2377D456CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>862F37258B8CB6BD53B97E10BFC8BFD3</key>
+		<key>14CE8977722BC0CE4AE583C33D82C6C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB855252579C74F793A2C0AB5B3E38AD</key>
+		<key>36375C6C74D45C9BAB699CA1D10434D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90092CC84A6D94812A5443582CE3CB30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB8DDCE5DE9B69E89FBE73F5A7BE071D</key>
+		<key>D993089B55249C865AC57D3F778B5130</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ECE88733E69B056AD9B4DCA94F89492A</key>
+		<key>F092B48890D524B32A0C04A221107AA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
