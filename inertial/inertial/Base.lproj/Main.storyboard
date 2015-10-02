@@ -73,15 +73,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOI-2r-sOw">
+                                <rect key="frame" x="16" y="266" width="572" height="285"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="h4r-or-08b" firstAttribute="width" secondItem="8I1-r9-thd" secondAttribute="height" multiplier="420:19" id="0cz-2R-PUH"/>
                             <constraint firstItem="6Xz-5k-1hq" firstAttribute="leading" secondItem="SN0-Jn-mgM" secondAttribute="trailing" constant="36.5" id="2tU-Ra-ssD"/>
+                            <constraint firstItem="lOI-2r-sOw" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="272" id="5O1-3H-aMt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ivt-lJ-iyy" secondAttribute="trailing" id="CqB-gE-iHT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="X95-9y-H9V" secondAttribute="trailing" id="Fd1-12-zPa"/>
                             <constraint firstItem="6Xz-5k-1hq" firstAttribute="baseline" secondItem="jRR-dD-HMh" secondAttribute="baseline" constant="10.5" id="IpI-xN-wje"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lOI-2r-sOw" secondAttribute="leading" constant="4" id="JfN-T3-P1M"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="lOI-2r-sOw" secondAttribute="bottom" id="KsM-6A-Nmp"/>
                             <constraint firstItem="K7W-20-aiP" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="Ldj-dV-Fhx"/>
                             <constraint firstItem="jRR-dD-HMh" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="149" id="Lsb-Sb-c66"/>
                             <constraint firstItem="X95-9y-H9V" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="9" id="MB5-5z-zTg"/>
@@ -89,7 +97,9 @@
                             <constraint firstAttribute="leadingMargin" secondItem="ivt-lJ-iyy" secondAttribute="leading" id="Pjf-6X-LgX"/>
                             <constraint firstItem="ivt-lJ-iyy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="201" id="Stz-Ud-dgK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jRR-dD-HMh" secondAttribute="trailing" constant="-4" id="WnP-0v-cfA"/>
+                            <constraint firstItem="lOI-2r-sOw" firstAttribute="top" secondItem="ivt-lJ-iyy" secondAttribute="bottom" constant="18.5" id="Wxm-RM-I9J"/>
                             <constraint firstItem="SN0-Jn-mgM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="147" id="YBS-wl-psB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lOI-2r-sOw" secondAttribute="trailing" constant="-8" id="b07-sm-7gC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Xz-5k-1hq" secondAttribute="trailing" constant="67" id="ca4-xN-V1T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h4r-or-08b" secondAttribute="trailing" constant="-4" id="eb6-GL-cvV"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SN0-Jn-mgM" secondAttribute="leading" id="fpH-tX-sTl"/>
@@ -102,6 +112,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="0cz-2R-PUH"/>
+                                <exclude reference="5O1-3H-aMt"/>
                             </mask>
                         </variation>
                     </view>
