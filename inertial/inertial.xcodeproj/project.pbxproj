@@ -17,8 +17,24 @@
 		2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */; settings = {ASSET_TAGS = (); }; };
+		2BE0D24B1BBF241B00312A1B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */; };
+		2BE0D24C1BBF241B00312A1B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BE0D24D1BBF241B00312A1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2BE0D24C1BBF241B00312A1B /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03EC14851B0CB7A7A9436D9B /* Pods-inertial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inertial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inertial/Pods-inertial.debug.xcconfig"; sourceTree = "<group>"; };
@@ -34,6 +50,7 @@
 		2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
+		2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inertial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B7338D54841504C6C9C852 /* Pods-inertial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inertial.release.xcconfig"; path = "Pods/Target Support Files/Pods-inertial/Pods-inertial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE0D24B1BBF241B00312A1B /* RealmSwift.framework in Frameworks */,
 				EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +71,7 @@
 		2B09555D1BBD75F7006FB5C1 = {
 			isa = PBXGroup;
 			children = (
+				2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */,
 				2B0955681BBD75F7006FB5C1 /* inertial */,
 				2B0955671BBD75F7006FB5C1 /* Products */,
 				D6A423BDA844F7F9495E6B21 /* Pods */,
@@ -116,6 +135,7 @@
 				2B0955641BBD75F7006FB5C1 /* Resources */,
 				12C89D2844FD4B05595D0B3D /* Embed Pods Frameworks */,
 				EC6EE4A4F161D8311951EA99 /* Copy Pods Resources */,
+				2BE0D24D1BBF241B00312A1B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,6 +366,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = inertial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,6 +387,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = inertial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

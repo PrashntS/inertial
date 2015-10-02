@@ -4,6 +4,7 @@
 target 'inertial' do
    pod 'Charts'
    pod 'MotionKit'
+   pod 'Realm'
    pod 'RealmSwift'
    pod 'FileKit'
    pod 'SwiftCharts'

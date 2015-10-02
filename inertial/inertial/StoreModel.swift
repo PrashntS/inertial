@@ -9,4 +9,7 @@
 import Foundation
 import RealmSwift
 
-
+class Probe: Object {
+    dynamic var tag = ""
+    dynamic var timeCreated = ""
+}

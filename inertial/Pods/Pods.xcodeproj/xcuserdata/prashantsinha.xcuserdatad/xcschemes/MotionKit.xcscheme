@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "943C105BFE56C9F1112107D0"
+               BlueprintIdentifier = "069C1DED84953EC81A00CCDB"
                BuildableName = "MotionKit.framework"
                BlueprintName = "MotionKit"
                ReferencedContainer = "container:Pods.xcodeproj">
