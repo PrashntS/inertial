@@ -31,6 +31,8 @@ class StreamerController: UIViewController {
     @IBAction func didChangeSampleRate(sender: UISlider) {
     }
     @IBAction func shouldUpdateSampleLabel(sender: UISlider) {
+        let rate: Int = Int(self.sampleRateSlider.value)
+        self.sampleRateLabel.text = "\(rate) Hz"
     }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
         // Dismiss Keyboards

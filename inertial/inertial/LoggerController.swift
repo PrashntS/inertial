@@ -71,7 +71,9 @@ class LoggerController: UIViewController {
         super.touchesBegan(touches, withEvent: event)
     }
     @IBAction func didDoLongPress(sender: UILongPressGestureRecognizer) {
-        SweetAlert().showAlert("Something!", subTitle: "You clicked the button!", style: AlertStyle.Success)
+        if sender.state == .Ended {
+            SweetAlert().showAlert("Something!", subTitle: "You clicked the button!", style: AlertStyle.Success)
+        }
     }
     
 }
