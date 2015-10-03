@@ -15,7 +15,9 @@ class LoggerController: UIViewController {
     @IBOutlet weak var motionTag: UITextField!
     @IBOutlet weak var rateSlider: UISlider!
     @IBOutlet weak var rateLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!]
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    let dataSchema: [String]
 
     override func viewDidLoad() {
         super.viewDidLoad()
