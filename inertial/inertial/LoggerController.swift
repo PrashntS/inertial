@@ -16,8 +16,9 @@ class LoggerController: UIViewController {
     @IBOutlet weak var rateSlider: UISlider!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
-    
-    let dataSchema: [String]
+    @IBOutlet weak var longPressGesture: UILongPressGestureRecognizer!
+
+    //let dataSchema: [String]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,4 +60,18 @@ class LoggerController: UIViewController {
         let rate: Int = Int(self.rateSlider.value)
         self.rateLabel.text = "\(rate) Hz"
     }
+
+    @IBAction func didMotionTagEditingEnd(sender: UITextField) {
+        view.endEditing(true)
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        // Dismiss Keyboards
+        
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    @IBAction func didDoLongPress(sender: UILongPressGestureRecognizer) {
+        SweetAlert().showAlert("Something!", subTitle: "You clicked the button!", style: AlertStyle.Success)
+    }
+    
 }

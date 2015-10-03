@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		2B09556A1BBD75F7006FB5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0955691BBD75F7006FB5C1 /* AppDelegate.swift */; };
 		2B09556C1BBD75F7006FB5C1 /* LoggerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09556B1BBD75F7006FB5C1 /* LoggerController.swift */; };
-		2B09556E1BBD75F7006FB5C1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09556D1BBD75F7006FB5C1 /* SecondViewController.swift */; };
 		2B0955711BBD75F7006FB5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B09556F1BBD75F7006FB5C1 /* Main.storyboard */; };
 		2B0955731BBD75F7006FB5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0955721BBD75F7006FB5C1 /* Assets.xcassets */; };
 		2B0955761BBD75F7006FB5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0955741BBD75F7006FB5C1 /* LaunchScreen.storyboard */; };
 		2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */; settings = {ASSET_TAGS = (); }; };
+		2B28C6AB1BBFBDBC00AA26BE /* StreamerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */; settings = {ASSET_TAGS = (); }; };
 		2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -41,12 +41,12 @@
 		2B0955661BBD75F7006FB5C1 /* inertial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inertial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0955691BBD75F7006FB5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B09556B1BBD75F7006FB5C1 /* LoggerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerController.swift; sourceTree = "<group>"; };
-		2B09556D1BBD75F7006FB5C1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2B0955701BBD75F7006FB5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B0955721BBD75F7006FB5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0955751BBD75F7006FB5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0955771BBD75F7006FB5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionKit.swift; path = ../Pods/MotionKit/MotionKit/MotionKit.swift; sourceTree = "<group>"; };
+		2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerController.swift; sourceTree = "<group>"; };
 		2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
@@ -92,7 +92,6 @@
 			children = (
 				2B0955691BBD75F7006FB5C1 /* AppDelegate.swift */,
 				2B09556B1BBD75F7006FB5C1 /* LoggerController.swift */,
-				2B09556D1BBD75F7006FB5C1 /* SecondViewController.swift */,
 				2B09556F1BBD75F7006FB5C1 /* Main.storyboard */,
 				2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */,
 				2B0955721BBD75F7006FB5C1 /* Assets.xcassets */,
@@ -101,6 +100,7 @@
 				2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */,
 				2B0955771BBD75F7006FB5C1 /* Info.plist */,
 				2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */,
+				2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */,
 			);
 			path = inertial;
 			sourceTree = "<group>";
@@ -245,10 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B09556E1BBD75F7006FB5C1 /* SecondViewController.swift in Sources */,
 				2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */,
 				2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */,
 				2B09556A1BBD75F7006FB5C1 /* AppDelegate.swift in Sources */,
+				2B28C6AB1BBFBDBC00AA26BE /* StreamerController.swift in Sources */,
 				2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */,
 				2B09556C1BBD75F7006FB5C1 /* LoggerController.swift in Sources */,
 				2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */,
