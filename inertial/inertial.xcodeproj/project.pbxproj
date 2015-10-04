@@ -18,7 +18,7 @@
 		2BA6901C1BC1294F007EFC05 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA6901B1BC1294F007EFC05 /* SwiftyJSON.framework */; };
 		2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */; settings = {ASSET_TAGS = (); }; };
-		EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -156,6 +156,11 @@
 					2B0955651BBD75F7006FB5C1 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = U8NB2YS4PU;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

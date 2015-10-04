@@ -60,7 +60,7 @@ class LoggerController: UIViewController {
             self.rateSlider.enabled = true
             self.rateLabel.enabled = true
             self.mk.stopDeviceMotionUpdates()
-            NSLog(self.prober.description!)
+            print(self.prober.description!)
         }
     }
 
