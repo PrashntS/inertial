@@ -48,4 +48,8 @@ class Probe {
         let paramsJSON = JSON(self._repr_())
         return paramsJSON.rawString(NSUTF8StringEncoding)
     }
+    
+    func saveAsFile() {
+        
+    }
 }

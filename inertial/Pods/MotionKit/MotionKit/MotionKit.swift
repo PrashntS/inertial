@@ -11,6 +11,7 @@
 
 import Foundation
 import CoreMotion
+import CoreLocation
 
 //_______________________________________________________________________________________________________________
 // this helps retrieve values from the sensors.
@@ -31,6 +32,7 @@ import CoreMotion
 class MotionKit {
     
     let manager = CMMotionManager()
+    let locManager = CLLocationManager()
     var delegate: MotionKitDelegate?
     
     /*
@@ -175,8 +177,7 @@ class MotionKit {
             NSLog("Device Motion is not available")
         }
     }
-    
-    
+
     /*
     *   getAccelerationFromDeviceMotion:interval:values:
     *   You can retrieve the processed user accelaration data from the device motion from this method.

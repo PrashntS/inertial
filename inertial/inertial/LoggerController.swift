@@ -94,7 +94,7 @@ class LoggerController: UIViewController {
                 "RotRate_X": deviceMotion.rotationRate.x,
                 "RotRate_Y": deviceMotion.rotationRate.y,
                 "RotRate_Z": deviceMotion.rotationRate.z,
-                "MagX": deviceMotion.magneticField.field.x,
+                "MagX": Double(deviceMotion.magneticField.accuracy.rawValue),
                 "MagY": deviceMotion.magneticField.field.y,
                 "MagZ": deviceMotion.magneticField.field.z,
                 "Yaw": deviceMotion.attitude.yaw,
@@ -102,6 +102,7 @@ class LoggerController: UIViewController {
                 "Roll": deviceMotion.attitude.roll
             ]
             self.prober.push(motionData)
+            print("Background")
             dispatch_sync(dispatch_get_main_queue(), { () ->
                 Void in
                 print(":)")
