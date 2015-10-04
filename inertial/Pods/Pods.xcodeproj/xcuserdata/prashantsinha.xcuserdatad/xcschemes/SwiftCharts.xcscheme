@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52127F558D904F080DE9EA54"
+               BlueprintIdentifier = "6FB0C00E28BC5E36C7872C5C"
                BuildableName = "SwiftCharts.framework"
                BlueprintName = "SwiftCharts"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -8,6 +8,7 @@ target 'inertial' do
    pod 'RealmSwift'
    pod 'FileKit'
    pod 'SwiftCharts'
+   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
    pod 'CocoaAsyncSocket'
 end
 

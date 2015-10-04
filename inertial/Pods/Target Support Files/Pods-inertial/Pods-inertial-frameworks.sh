@@ -59,6 +59,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-inertial/Realm.framework'
   install_framework 'Pods-inertial/RealmSwift.framework'
   install_framework 'Pods-inertial/SwiftCharts.framework'
+  install_framework 'Pods-inertial/SwiftyJSON.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-inertial/Charts.framework'
@@ -68,4 +69,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-inertial/Realm.framework'
   install_framework 'Pods-inertial/RealmSwift.framework'
   install_framework 'Pods-inertial/SwiftCharts.framework'
+  install_framework 'Pods-inertial/SwiftyJSON.framework'
 fi

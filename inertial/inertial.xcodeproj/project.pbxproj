@@ -15,11 +15,10 @@
 		2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */; settings = {ASSET_TAGS = (); }; };
 		2B28C6AB1BBFBDBC00AA26BE /* StreamerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */; settings = {ASSET_TAGS = (); }; };
 		2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2BA6901C1BC1294F007EFC05 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA6901B1BC1294F007EFC05 /* SwiftyJSON.framework */; };
 		2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */; settings = {ASSET_TAGS = (); }; };
-		2BE0D24B1BBF241B00312A1B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */; };
-		2BE0D24C1BBF241B00312A1B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2BE0D24C1BBF241B00312A1B /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,9 +46,9 @@
 		2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionKit.swift; path = ../Pods/MotionKit/MotionKit/MotionKit.swift; sourceTree = "<group>"; };
 		2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerController.swift; sourceTree = "<group>"; };
 		2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		2BA6901B1BC1294F007EFC05 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
-		2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inertial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B7338D54841504C6C9C852 /* Pods-inertial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inertial.release.xcconfig"; path = "Pods/Target Support Files/Pods-inertial/Pods-inertial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE0D24B1BBF241B00312A1B /* RealmSwift.framework in Frameworks */,
+				2BA6901C1BC1294F007EFC05 /* SwiftyJSON.framework in Frameworks */,
 				EE93A5F45AADAC3473DC4D8B /* Pods_inertial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +69,6 @@
 		2B09555D1BBD75F7006FB5C1 = {
 			isa = PBXGroup;
 			children = (
-				2BE0D24A1BBF241B00312A1B /* RealmSwift.framework */,
 				2B0955681BBD75F7006FB5C1 /* inertial */,
 				2B0955671BBD75F7006FB5C1 /* Products */,
 				D6A423BDA844F7F9495E6B21 /* Pods */,
@@ -117,6 +114,7 @@
 		E3FA34B6F9186B8C4F05F908 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BA6901B1BC1294F007EFC05 /* SwiftyJSON.framework */,
 				B9DBBF3E0E950F0F0E3AAF7E /* Pods_inertial.framework */,
 			);
 			name = Frameworks;
@@ -366,6 +364,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/**",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = inertial/Info.plist;
@@ -373,6 +372,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Realm/core",
+					"$(PROJECT_DIR)/Pods/**",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.prshnts.inertial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,6 +387,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/**",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = inertial/Info.plist;
@@ -394,6 +395,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Realm/core",
+					"$(PROJECT_DIR)/Pods/**",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.prshnts.inertial;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -17,8 +17,9 @@ class LoggerController: UIViewController {
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var longPressGesture: UILongPressGestureRecognizer!
-
-    //let dataSchema: [String]
+    
+    let mk: MotionKit = MotionKit()
+    var prober: Probe!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +47,20 @@ class LoggerController: UIViewController {
             self.motionTag.enabled = false
             self.rateSlider.enabled = false
             self.rateLabel.enabled = false
-            SweetAlert().showAlert("Here's a message!", subTitle: "You clicked the button!", style: AlertStyle.Success)
+            
+            // Create Probe Object
+            self.prober = Probe(tag: tag!, created: NSDate(), rate: rate)
+            
+            // Call Data Gather
+            self.getSensorData(rate)
         }
         else {
             // Enable Tag entry, and switches.
             self.motionTag.enabled = true
             self.rateSlider.enabled = true
             self.rateLabel.enabled = true
+            self.mk.stopDeviceMotionUpdates()
+            NSLog(self.prober.description!)
         }
     }
 
@@ -73,6 +81,31 @@ class LoggerController: UIViewController {
     @IBAction func didDoLongPress(sender: UILongPressGestureRecognizer) {
         if sender.state == .Ended {
             SweetAlert().showAlert("Something!", subTitle: "You clicked the button!", style: AlertStyle.Success)
+        }
+    }
+    
+    func getSensorData(rate: Int) {
+        self.mk.getDeviceMotionObject(1.0 / Double(rate)) {
+            (deviceMotion) -> () in
+            let motionData: [String: Double] = [
+                "Accel_X": deviceMotion.gravity.x,
+                "Accel_Y": deviceMotion.gravity.y,
+                "Accel_Z": deviceMotion.gravity.z,
+                "RotRate_X": deviceMotion.rotationRate.x,
+                "RotRate_Y": deviceMotion.rotationRate.y,
+                "RotRate_Z": deviceMotion.rotationRate.z,
+                "MagX": deviceMotion.magneticField.field.x,
+                "MagY": deviceMotion.magneticField.field.y,
+                "MagZ": deviceMotion.magneticField.field.z,
+                "Yaw": deviceMotion.attitude.yaw,
+                "Pitch": deviceMotion.attitude.pitch,
+                "Roll": deviceMotion.attitude.roll
+            ]
+            self.prober.push(motionData)
+            dispatch_sync(dispatch_get_main_queue(), { () ->
+                Void in
+                print(":)")
+            })
         }
     }
     

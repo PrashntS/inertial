@@ -9,6 +9,7 @@ PODS:
   - RealmSwift (0.95.2):
     - Realm (= 0.95.2)
   - SwiftCharts (0.3)
+  - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
   - Charts
@@ -18,6 +19,16 @@ DEPENDENCIES:
   - Realm
   - RealmSwift
   - SwiftCharts
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 3b5d0d4e0c19173b1bf0dc823bde25ad870f70c0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Charts: 870589b6b4bf8468baacea8869c28983d71f602c
@@ -27,5 +38,6 @@ SPEC CHECKSUMS:
   Realm: 4c026902041bb39c4bd083ebc5e88f4f17973d72
   RealmSwift: ac7822fe7ab8dca7fa979f4d576793b111d6dce1
   SwiftCharts: c66a449d58f9c811c467f865a47b1b6136b49499
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
 
 COCOAPODS: 0.38.2
