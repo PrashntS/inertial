@@ -15,6 +15,7 @@
 		2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */; settings = {ASSET_TAGS = (); }; };
 		2B28C6AB1BBFBDBC00AA26BE /* StreamerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */; settings = {ASSET_TAGS = (); }; };
 		2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2B8777A11BC1748100A25618 /* SyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8777A01BC1748100A25618 /* SyncController.swift */; settings = {ASSET_TAGS = (); }; };
 		2BA6901C1BC1294F007EFC05 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA6901B1BC1294F007EFC05 /* SwiftyJSON.framework */; };
 		2BD9E2B51BBF173A00067E0D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		2BD9E2B71BBF1FC600067E0D /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -46,6 +47,7 @@
 		2B123AAA1BBEB90D00F1E1ED /* MotionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionKit.swift; path = ../Pods/MotionKit/MotionKit/MotionKit.swift; sourceTree = "<group>"; };
 		2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerController.swift; sourceTree = "<group>"; };
 		2B7CBF751BBD7D9E0036F994 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		2B8777A01BC1748100A25618 /* SyncController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncController.swift; sourceTree = "<group>"; };
 		2BA6901B1BC1294F007EFC05 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		2BD9E2B41BBF173A00067E0D /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				2B0955771BBD75F7006FB5C1 /* Info.plist */,
 				2BD9E2B61BBF1FC600067E0D /* StoreModel.swift */,
 				2B28C6AA1BBFBDBC00AA26BE /* StreamerController.swift */,
+				2B8777A01BC1748100A25618 /* SyncController.swift */,
 			);
 			path = inertial;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8777A11BC1748100A25618 /* SyncController.swift in Sources */,
 				2B123AAB1BBEB90D00F1E1ED /* MotionKit.swift in Sources */,
 				2B7CBF761BBD7D9E0036F994 /* ChartViewController.swift in Sources */,
 				2B09556A1BBD75F7006FB5C1 /* AppDelegate.swift in Sources */,
