@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Charts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyDropbox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E766F22E489AD4FC166EB6202969F9F</key>
+		<key>40965DDDF4FE231B3760863371F30157</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B802F1CCD098553414EC4377A200F9E5</key>
+		<key>5F594FE274CCBD45C6C0ED58D346874B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>836429E32F3FB09E93EDC61360704F9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B33BCA35228D196089B41412B478F77F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,22 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F21CEF597ACF96B4D1C197BFA332E78C</key>
+		<key>E797A881142093718118123F239AEAD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FAB44DF643F669852AE365971CA96FB9</key>
+		<key>F1D6D827AD10D34FEE1951009031BAE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FCD82695D001B0CC9186A073E7559CA8</key>
+		<key>F2CBEB067DAA49A839426AE984E77F0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE3ED591AFA67708F458B358809F1249</key>
+		<key>FD06A0DC6C048D8248F65EE2EECA1C98</key>
 		<dict>
 			<key>primary</key>
 			<true/>

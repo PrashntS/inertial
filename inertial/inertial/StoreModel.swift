@@ -12,19 +12,27 @@ import FileKit
 
 class Probe {
     let tag: String
+    let safeTag: String
     let created: String?
     let sampleRate: Int
     var store: [[String: Double]] = []
     
     init (tag: String, created: NSDate, rate: Int) {
         self.tag = tag
+        self.safeTag = tag.componentsSeparatedByCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet).joinWithSeparator("")
         self.sampleRate = rate
         self.created = Probe.getFormattedDate(created)
     }
     
-    static func getFormattedDate (date: NSDate, utc: Bool = true) -> String {
+    static func getFormattedDate (date: NSDate, kind: Int = 0, utc: Bool = true) -> String {
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZ"
+        switch kind {
+        case 1:
+            formatter.dateFormat = "yyyyMMddHHmmss.SSS"
+        default:
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS ZZZ"
+        }
+
         if utc {
             formatter.timeZone = NSTimeZone(abbreviation: "UTC")
         }
@@ -49,7 +57,23 @@ class Probe {
         return paramsJSON.rawString(NSUTF8StringEncoding)
     }
     
-    func saveAsFile() {
-        
+    func saveAsFile() -> String? {
+        do {
+            let fileName = Probe.getFormattedDate(NSDate(), kind: 1) + self.safeTag + ".json"
+            let fileLoc = FKPath.UserHome.rawValue + "/Documents/" + fileName
+            let filePath = FKPath(fileLoc)
+//            try filePath.createFile()
+            try self.description! |> FKTextFile(path: filePath)
+            NSLog("Saved file as" + filePath.description)
+            return filePath.description
+        } catch {
+            NSLog("Could not save the file")
+            return nil
+        }
     }
+    
+    deinit {
+        self.saveAsFile()
+    }
+    
 }

@@ -52,6 +52,7 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'Pods-inertial/Alamofire.framework'
   install_framework 'Pods-inertial/Charts.framework'
   install_framework 'Pods-inertial/CocoaAsyncSocket.framework'
   install_framework 'Pods-inertial/FileKit.framework'
@@ -59,9 +60,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-inertial/Realm.framework'
   install_framework 'Pods-inertial/RealmSwift.framework'
   install_framework 'Pods-inertial/SwiftCharts.framework'
+  install_framework 'Pods-inertial/SwiftyDropbox.framework'
   install_framework 'Pods-inertial/SwiftyJSON.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'Pods-inertial/Alamofire.framework'
   install_framework 'Pods-inertial/Charts.framework'
   install_framework 'Pods-inertial/CocoaAsyncSocket.framework'
   install_framework 'Pods-inertial/FileKit.framework'
@@ -69,5 +72,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-inertial/Realm.framework'
   install_framework 'Pods-inertial/RealmSwift.framework'
   install_framework 'Pods-inertial/SwiftCharts.framework'
+  install_framework 'Pods-inertial/SwiftyDropbox.framework'
   install_framework 'Pods-inertial/SwiftyJSON.framework'
 fi
